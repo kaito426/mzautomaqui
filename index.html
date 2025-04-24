@@ -126,17 +126,151 @@
         <li>💄 Guia de Produtos Baratos para Maquiagem</li>
         <li>✅ Lista de Verificação de Maquiagem Completa</li>
         <li>📱 Acesso ao Grupo VIP no WhatsApp</li>
-      </ul>
-      <p><strong class="text-pink-600">Tudo isso por apenas <span style="color:green">250MT</span></strong></p>
-      <p><strong>💳 Como pagar:</strong></p>
-      <ul>
-        <li>1. Envie 250MT via M-Pesa para: <strong>842482984 (Kaito Luís)</strong></li>
-        <li>2. Clique abaixo e envie o comprovativo no WhatsApp</li>
-      </ul>
-      <a href="https://wa.me/258842482984" class="cta" target="_blank">📲 ENVIAR COMPROVATIVO PELO WHATSAPP</a>
-      <a href="tel:*150*01*842482984*250#" class="cta-mpesa">💳 PAGAR AGORA PELO M-PESA</a>
-      <p style="font-size:0.9rem; color:#666;">Acesso ao curso em até 30 minutos após a confirmação do pagamento.</p>
+  <!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento M-Pesa - Curso Automaquiagem</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #fff, #ffe6ec);
+      color: #333;
+      padding: 2rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 480px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #e91e63;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+    .mpesa-box {
+      background: #f0fff4;
+      border-left: 5px solid #4caf50;
+      padding: 1rem;
+      margin-top: 1rem;
+      text-align: left;
+      font-size: 1rem;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: #4caf50;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .warning {
+      margin-top: 2rem;
+      background: #fff3cd;
+      border-left: 5px solid #ff9800;
+      padding: 1rem;
+      font-weight: bold;
+      color: #856404;
+      text-align: left;
+    }
+    .price-box {
+      margin: 1rem 0;
+      font-size: 1.5rem;
+    }
+    .price-original {
+      text-decoration: line-through;
+      color: #888;
+      margin-right: 1rem;
+    }
+    .price-now {
+      color: #4caf50;
+      font-weight: bold;
+    }
+    #countdown {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+      color: #e91e63;
+    }
+    button.copy-btn {
+      background-color: #2196f3;
+      color: white;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Finalize seu Pagamento via M-Pesa</h1>
+    <p>Aproveite esta promoção especial por tempo limitado!</p>
+
+    <div class="price-box">
+      <span class="price-original">600MT</span>
+      <span id="promo-price" class="price-now">250MT</span>
     </div>
+
+    <p>Promoção termina em: <span id="countdown">05:00</span></p>
+
+    <div class="mpesa-box">
+      <p><strong>Número da Empresa (M-Pesa):</strong> <span id="mpesa-number">842482984</span></p>
+      <button class="copy-btn" onclick="copyMpesaNumber()">📋 Copiar Número para Pagar</button>
+      <p style="margin-top:1rem"><strong>1.</strong> Copie o número acima<br>
+         <strong>2.</strong> Abra o app M-Pesa no seu celular<br>
+         <strong>3.</strong> Faça o pagamento e envie o comprovativo no WhatsApp</p>
+    </div>
+
+    <a href="https://wa.me/258842482984" class="cta-button">📲 ENVIAR COMPROVATIVO PELO WHATSAPP</a>
+
+    <div class="warning">
+      ⚠️ <strong>IMPORTANTE:</strong> Após o pagamento, envie imediatamente o comprovativo para o WhatsApp. <br>
+      ❌ Não envie mensagens com dúvidas, curiosidade ou conversa. Apenas envie o comprovativo de pagamento ou pergunte sobre outro método de pagamento.
+    </div>
+  </div>
+
+  <script>
+    function copyMpesaNumber() {
+      const mpesaNumber = document.getElementById("mpesa-number").textContent;
+      navigator.clipboard.writeText(mpesaNumber);
+      alert("Número copiado: " + mpesaNumber);
+    }
+
+    // Countdown timer (5 minutes)
+    let timeLeft = 300;
+    const countdownElement = document.getElementById("countdown");
+    const promoPrice = document.getElementById("promo-price");
+
+    const timer = setInterval(() => {
+      const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
+      const seconds = String(timeLeft % 60).padStart(2, '0');
+      countdownElement.textContent = `${minutes}:${seconds}`;
+      timeLeft--;
+
+      if (timeLeft < 0) {
+        clearInterval(timer);
+        promoPrice.textContent = "700MT";
+        document.querySelector('.price-original').textContent = "";
+        countdownElement.textContent = "Promoção encerrada";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
+
 
     <div id="notification" class="notification-box"></div>
 
