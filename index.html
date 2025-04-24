@@ -1,27 +1,79 @@
-import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle } from "lucide-react";
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <!-- head aqui -->
+</head>
+<body>
+  <!-- corpo do site aqui -->
+  <script>
+    // Aqui vai o JavaScript puro
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curso de Automaquiagem</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(to bottom, white, #ffe4e6);
+      padding: 2rem;
+      color: #333;
+    }
+    .notification {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #dcfce7;
+      color: #166534;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: pulse 1s infinite alternate;
+      display: none;
+    }
 
-const notifications = [
-  "Antónia (Tete) acabou de comprar o curso!",
-  "Carlos (Maputo) garantiu sua vaga agora mesmo!",
-  "Lúcia (Beira) comprou o curso de automaquiagem!",
-  "Mário (Nampula) fez o pagamento via M-Pesa!",
-  "Inês (Quelimane) está dentro do grupo VIP!"
-];
+    @keyframes pulse {
+      from { opacity: 0.7; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
 
-export default function AutoMaquiagemMozLanding() {
-  const [notification, setNotification] = useState("");
+  <h1>Curso de Automaquiagem por Apenas 250MT</h1>
+  <p>Aprenda a se maquiar como profissional com técnicas simples e práticas!</p>
 
-  useEffect(() => {
-    const interval = setInterval(() => {
+  <div id="notification" class="notification"></div>
+
+  <script>
+    const notifications = [
+      "Antónia (Tete) acabou de comprar o curso!",
+      "Carlos (Maputo) garantiu sua vaga agora mesmo!",
+      "Lúcia (Beira) comprou o curso de automaquiagem!",
+      "Mário (Nampula) fez o pagamento via M-Pesa!",
+      "Inês (Quelimane) está dentro do grupo VIP!"
+    ];
+
+    const notificationDiv = document.getElementById('notification');
+
+    function showRandomNotification() {
       const index = Math.floor(Math.random() * notifications.length);
-      setNotification(notifications[index]);
-      setTimeout(() => setNotification(""), 5000);
-    }, 15000);
-    return () => clearInterval(interval);
-  }, []);
+      notificationDiv.textContent = notifications[index];
+      notificationDiv.style.display = 'block';
+
+      setTimeout(() => {
+        notificationDiv.style.display = 'none';
+      }, 5000);
+    }
+
+    setInterval(showRandomNotification, 15000);
+  </script>
+
+</body>
+</html>
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-pink-50 text-gray-800 p-6">
