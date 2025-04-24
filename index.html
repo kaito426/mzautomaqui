@@ -1,0 +1,108 @@
+import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { CheckCircle } from "lucide-react";
+
+const notifications = [
+  "Antónia (Tete) acabou de comprar o curso!",
+  "Carlos (Maputo) garantiu sua vaga agora mesmo!",
+  "Lúcia (Beira) comprou o curso de automaquiagem!",
+  "Mário (Nampula) fez o pagamento via M-Pesa!",
+  "Inês (Quelimane) está dentro do grupo VIP!"
+];
+
+export default function AutoMaquiagemMozLanding() {
+  const [notification, setNotification] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const index = Math.floor(Math.random() * notifications.length);
+      setNotification(notifications[index]);
+      setTimeout(() => setNotification(""), 5000);
+    }, 15000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-white to-pink-50 text-gray-800 p-6">
+      <div className="max-w-3xl mx-auto text-center space-y-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-pink-600">
+          Curso de Automaquiagem por Apenas 250MT
+        </h1>
+        <p className="text-lg md:text-xl text-gray-700">
+          Aprenda a se maquiar como profissional com técnicas simples e práticas. Curso 100% online e acessível!
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-4 text-left mt-10">
+          {["Acesso imediato ao curso por PDF e vídeo", "Técnicas de preparação da pele", "Segredos da maquiagem profissional", "Look completo para o dia e noite", "Certificado digital de participação"].map((item, i) => (
+            <div key={i} className="flex items-start space-x-2">
+              <CheckCircle className="text-green-500 mt-1" />
+              <span>{item}</span>
+            </div>
+          ))}
+        </div>
+
+        <Card className="bg-white shadow-lg mt-10">
+          <CardContent className="p-6 space-y-4">
+            <h2 className="text-2xl font-semibold">🎁 BÔNUS EXCLUSIVOS:</h2>
+            <ul className="space-y-2">
+              <li>💄 Guia de Produtos Baratos para Maquiagem</li>
+              <li>✅ Lista de Verificação de Maquiagem Completa</li>
+              <li>📱 Acesso ao Grupo VIP no WhatsApp</li>
+            </ul>
+            <p className="text-pink-600 font-bold text-xl">
+              Tudo isso por apenas <span className="text-green-600">250MT</span>
+            </p>
+            <div className="space-y-2">
+              <p className="text-left text-sm text-gray-600">
+                💳 Como obter:
+              </p>
+              <ul className="text-left text-sm text-gray-700 list-disc list-inside">
+                <li>1. Envie 250MT via M-Pesa para: <strong>842482984 (Kaito Luís)</strong></li>
+                <li>2. Envie o comprovativo no WhatsApp clicando no botão abaixo</li>
+              </ul>
+              <a
+                href="https://wa.me/258842482984"
+                className="inline-block w-full mt-2"
+                target="_blank"
+              >
+                <Button className="bg-green-600 hover:bg-green-700 text-white w-full text-lg py-6 rounded-2xl shadow-xl">
+                  📲 ENVIAR COMPROVATIVO PELO WHATSAPP
+                </Button>
+              </a>
+            </div>
+            <p className="text-sm text-gray-500">
+              Acesso ao curso em até 30 minutos após a confirmação do pagamento.
+            </p>
+          </CardContent>
+        </Card>
+
+        {notification && (
+          <div className="mt-6 bg-green-100 text-green-800 px-4 py-2 rounded shadow-md animate-pulse">
+            {notification}
+          </div>
+        )}
+
+        <div className="mt-10 text-left max-w-2xl mx-auto space-y-6">
+          <h2 className="text-2xl font-bold text-pink-600">❓ Perguntas Frequentes</h2>
+          <div>
+            <p className="font-semibold">1. O curso é presencial?</p>
+            <p>Não, o curso é 100% online. Após o pagamento e envio do comprovativo, você recebe acesso imediato ao conteúdo digital.</p>
+          </div>
+          <div>
+            <p className="font-semibold">2. Preciso de materiais caros?</p>
+            <p>Não. O curso ensina técnicas que você pode aplicar com produtos acessíveis e até caseiros.</p>
+          </div>
+          <div>
+            <p className="font-semibold">3. O que acontece depois que eu pago?</p>
+            <p>Você envia o comprovativo no WhatsApp e recebe o acesso ao curso em até 30 minutos.</p>
+          </div>
+          <div>
+            <p className="font-semibold">4. Recebo certificado?</p>
+            <p>Sim! Ao concluir o curso, você poderá baixar um certificado digital de participação.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
