@@ -1,160 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <!-- head aqui -->
-</head>
-<body>
-  <!-- corpo do site aqui -->
-  <script>
-    // Aqui vai o JavaScript puro
-  </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt">
-<head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Curso de Automaquiagem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso de Automaquiagem - 250MT</title>
   <style>
     body {
-      font-family: sans-serif;
-      background: linear-gradient(to bottom, white, #ffe4e6);
-      padding: 2rem;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #fff, #ffe6ec);
       color: #333;
+      padding: 2rem;
     }
-    .notification {
+    .container {
+      max-width: 720px;
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #e91e63;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .subtitle {
+      font-size: 1.25rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+    .features {
+      text-align: left;
       margin-top: 2rem;
-      padding: 1rem;
-      background-color: #dcfce7;
-      color: #166534;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      animation: pulse 1s infinite alternate;
-      display: none;
+      margin-bottom: 2rem;
     }
-
-    @keyframes pulse {
-      from { opacity: 0.7; }
-      to { opacity: 1; }
+    .features li {
+      margin-bottom: 0.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      color: #e91e63;
+      margin-bottom: 1rem;
+    }
+    .card ul {
+      text-align: left;
+      margin: 1rem 0;
+    }
+    .cta {
+      display: block;
+      background: #4caf50;
+      color: white;
+      font-size: 1.2rem;
+      padding: 1rem;
+      border-radius: 12px;
+      text-decoration: none;
+      margin-top: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .notification-box {
+      display: none;
+      background-color: #d1fae5;
+      color: #065f46;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-left: 6px solid #10b981;
+      border-radius: 10px;
+      font-weight: 500;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .faq {
+      text-align: left;
+      margin-top: 3rem;
+    }
+    .faq h2 {
+      font-size: 1.5rem;
+      color: #e91e63;
+    }
+    .faq p {
+      margin: 0.5rem 0;
+    }
+    .faq .question {
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>💄 Curso de Automaquiagem por Apenas 250MT</h1>
+    <p class="subtitle">Aprenda a se maquiar como profissional com técnicas simples e práticas. Curso 100% online e acessível!</p>
 
-  <h1>Curso de Automaquiagem por Apenas 250MT</h1>
-  <p>Aprenda a se maquiar como profissional com técnicas simples e práticas!</p>
+    <ul class="features">
+      <li>✅ Acesso imediato ao curso por PDF e vídeo</li>
+      <li>✅ Técnicas de preparação da pele</li>
+      <li>✅ Segredos da maquiagem profissional</li>
+      <li>✅ Look completo para o dia e noite</li>
+      <li>✅ Certificado digital de participação</li>
+    </ul>
 
-  <div id="notification" class="notification"></div>
+    <div class="card">
+      <h2>🎁 BÔNUS EXCLUSIVOS:</h2>
+      <ul>
+        <li>💄 Guia de Produtos Baratos para Maquiagem</li>
+        <li>✅ Lista de Verificação de Maquiagem Completa</li>
+        <li>📱 Acesso ao Grupo VIP no WhatsApp</li>
+      </ul>
+      <p><strong class="text-pink-600">Tudo isso por apenas <span style="color:green">250MT</span></strong></p>
+      <p><strong>💳 Como obter:</strong></p>
+      <ul>
+        <li>1. Envie 250MT via M-Pesa para: <strong>842482984 (Kaito Luís)</strong></li>
+        <li>2. Envie o comprovativo no WhatsApp clicando no botão abaixo</li>
+      </ul>
+      <a href="https://wa.me/258842482984" class="cta" target="_blank">📲 ENVIAR COMPROVATIVO PELO WHATSAPP</a>
+      <p style="font-size:0.9rem; color:#666;">Acesso ao curso em até 30 minutos após a confirmação do pagamento.</p>
+    </div>
+
+    <div id="notification" class="notification-box"></div>
+
+    <div class="faq">
+      <h2>❓ Perguntas Frequentes</h2>
+      <p class="question">1. O curso é presencial?</p>
+      <p>Não, o curso é 100% online. Após o pagamento e envio do comprovativo, você recebe acesso imediato ao conteúdo digital.</p>
+      <p class="question">2. Preciso de materiais caros?</p>
+      <p>Não. O curso ensina técnicas que você pode aplicar com produtos acessíveis e até caseiros.</p>
+      <p class="question">3. O que acontece depois que eu pago?</p>
+      <p>Você envia o comprovativo no WhatsApp e recebe o acesso ao curso em até 30 minutos.</p>
+      <p class="question">4. Recebo certificado?</p>
+      <p>Sim! Ao concluir o curso, você poderá baixar um certificado digital de participação.</p>
+    </div>
+  </div>
 
   <script>
     const notifications = [
-      "Antónia (Tete) acabou de comprar o curso!",
-      "Carlos (Maputo) garantiu sua vaga agora mesmo!",
-      "Lúcia (Beira) comprou o curso de automaquiagem!",
-      "Mário (Nampula) fez o pagamento via M-Pesa!",
-      "Inês (Quelimane) está dentro do grupo VIP!"
+      "✅ Antónia de Tete acabou de garantir o curso!",
+      "🎉 Carlos (Maputo) entrou no grupo VIP!",
+      "💄 Lúcia (Beira) comprou e amou o conteúdo!",
+      "📲 Mário (Nampula) pagou via M-Pesa!",
+      "🔥 Inês (Quelimane) já está maquiando clientes!"
     ];
 
-    const notificationDiv = document.getElementById('notification');
+    const notificationBox = document.getElementById('notification');
 
-    function showRandomNotification() {
+    function showNotification() {
       const index = Math.floor(Math.random() * notifications.length);
-      notificationDiv.textContent = notifications[index];
-      notificationDiv.style.display = 'block';
+      notificationBox.textContent = notifications[index];
+      notificationBox.style.display = 'block';
 
       setTimeout(() => {
-        notificationDiv.style.display = 'none';
+        notificationBox.style.display = 'none';
       }, 5000);
     }
 
-    setInterval(showRandomNotification, 15000);
+    setInterval(showNotification, 15000);
   </script>
-
 </body>
 </html>
-
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-pink-50 text-gray-800 p-6">
-      <div className="max-w-3xl mx-auto text-center space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-pink-600">
-          Curso de Automaquiagem por Apenas 250MT
-        </h1>
-        <p className="text-lg md:text-xl text-gray-700">
-          Aprenda a se maquiar como profissional com técnicas simples e práticas. Curso 100% online e acessível!
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-4 text-left mt-10">
-          {["Acesso imediato ao curso por PDF e vídeo", "Técnicas de preparação da pele", "Segredos da maquiagem profissional", "Look completo para o dia e noite", "Certificado digital de participação"].map((item, i) => (
-            <div key={i} className="flex items-start space-x-2">
-              <CheckCircle className="text-green-500 mt-1" />
-              <span>{item}</span>
-            </div>
-          ))}
-        </div>
-
-        <Card className="bg-white shadow-lg mt-10">
-          <CardContent className="p-6 space-y-4">
-            <h2 className="text-2xl font-semibold">🎁 BÔNUS EXCLUSIVOS:</h2>
-            <ul className="space-y-2">
-              <li>💄 Guia de Produtos Baratos para Maquiagem</li>
-              <li>✅ Lista de Verificação de Maquiagem Completa</li>
-              <li>📱 Acesso ao Grupo VIP no WhatsApp</li>
-            </ul>
-            <p className="text-pink-600 font-bold text-xl">
-              Tudo isso por apenas <span className="text-green-600">250MT</span>
-            </p>
-            <div className="space-y-2">
-              <p className="text-left text-sm text-gray-600">
-                💳 Como obter:
-              </p>
-              <ul className="text-left text-sm text-gray-700 list-disc list-inside">
-                <li>1. Envie 250MT via M-Pesa para: <strong>842482984 (Kaito Luís)</strong></li>
-                <li>2. Envie o comprovativo no WhatsApp clicando no botão abaixo</li>
-              </ul>
-              <a
-                href="https://wa.me/258842482984"
-                className="inline-block w-full mt-2"
-                target="_blank"
-              >
-                <Button className="bg-green-600 hover:bg-green-700 text-white w-full text-lg py-6 rounded-2xl shadow-xl">
-                  📲 ENVIAR COMPROVATIVO PELO WHATSAPP
-                </Button>
-              </a>
-            </div>
-            <p className="text-sm text-gray-500">
-              Acesso ao curso em até 30 minutos após a confirmação do pagamento.
-            </p>
-          </CardContent>
-        </Card>
-
-        {notification && (
-          <div className="mt-6 bg-green-100 text-green-800 px-4 py-2 rounded shadow-md animate-pulse">
-            {notification}
-          </div>
-        )}
-
-        <div className="mt-10 text-left max-w-2xl mx-auto space-y-6">
-          <h2 className="text-2xl font-bold text-pink-600">❓ Perguntas Frequentes</h2>
-          <div>
-            <p className="font-semibold">1. O curso é presencial?</p>
-            <p>Não, o curso é 100% online. Após o pagamento e envio do comprovativo, você recebe acesso imediato ao conteúdo digital.</p>
-          </div>
-          <div>
-            <p className="font-semibold">2. Preciso de materiais caros?</p>
-            <p>Não. O curso ensina técnicas que você pode aplicar com produtos acessíveis e até caseiros.</p>
-          </div>
-          <div>
-            <p className="font-semibold">3. O que acontece depois que eu pago?</p>
-            <p>Você envia o comprovativo no WhatsApp e recebe o acesso ao curso em até 30 minutos.</p>
-          </div>
-          <div>
-            <p className="font-semibold">4. Recebo certificado?</p>
-            <p>Sim! Ao concluir o curso, você poderá baixar um certificado digital de participação.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
