@@ -352,3 +352,56 @@
     });
   }
 </script>
+<style>
+  .notification-bubble {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+    display: none;
+    animation: fadeInOut 7s ease-in-out;
+  }
+
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(20px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(20px); }
+  }
+</style>
+
+<div id="notification" class="notification-bubble"></div>
+
+<script>
+  const buyers = [
+    "Carlos de Maputo acabou de adquirir o curso!",
+    "Maria de Matola se inscreveu agora!",
+    "João acabou de garantir sua vaga!",
+    "Ana fez o pagamento e já recebeu acesso!",
+    "Pedro de Beira comprou o curso há 2 minutos!",
+    "Sandra entrou no grupo VIP agora!",
+    "Luís finalizou o pagamento com sucesso!",
+    "Jéssica de Nampula garantiu o bônus exclusivo!"
+  ];
+
+  function showNotification() {
+    const notification = document.getElementById('notification');
+    const randomIndex = Math.floor(Math.random() * buyers.length);
+    notification.innerText = buyers[randomIndex];
+    notification.style.display = 'block';
+
+    setTimeout(() => {
+      notification.style.display = 'none';
+    }, 7000); // tempo visível (ms)
+  }
+
+  // Mostrar uma notificação a cada 15 segundos
+  setInterval(showNotification, 15000);
+</script>
+
