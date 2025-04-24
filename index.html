@@ -1,314 +1,354 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curso de Automaquiagem - 250MT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curso de Maquiagem por 250MT</title>
   <style>
+    :root {
+      --rosa: #b6005d;
+      --fundo: #fff6f9;
+      --texto: #333;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #fff, #ffe6ec);
-      color: #333;
-      padding: 2rem;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--fundo);
+      color: var(--texto);
     }
+
     .container {
-      max-width: 720px;
-      margin: auto;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #e91e63;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-    .subtitle {
-      font-size: 1.25rem;
-      color: #555;
-      margin-bottom: 2rem;
-    }
-    .warning {
-      background: #ffcccc;
-      border-left: 6px solid red;
-      padding: 1rem;
-      margin-bottom: 2rem;
-      font-weight: bold;
-      color: #b30000;
-    }
-    .features {
-      text-align: left;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
-    .features li {
-      margin-bottom: 0.5rem;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      margin-top: 2rem;
-    }
-    .card h2 {
-      font-size: 1.5rem;
-      color: #e91e63;
-      margin-bottom: 1rem;
-    }
-    .card ul {
-      text-align: left;
-      margin: 1rem 0;
-    }
-    .cta, .cta-mpesa {
-      display: block;
-      background: #4caf50;
-      color: white;
-      font-size: 1.2rem;
-      padding: 1rem;
-      border-radius: 12px;
-      text-decoration: none;
-      margin-top: 1rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    .notification-box {
-      display: none;
-      background-color: #d1fae5;
-      color: #065f46;
-      padding: 1rem;
-      margin-top: 2rem;
-      border-left: 6px solid #10b981;
-      border-radius: 10px;
-      font-weight: 500;
-      animation: fadeIn 0.5s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .faq {
-      text-align: left;
-      margin-top: 3rem;
-    }
-    .faq h2 {
-      font-size: 1.5rem;
-      color: #e91e63;
-    }
-    .faq p {
-      margin: 0.5rem 0;
-    }
-    .faq .question {
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="warning">
-      ⚠️ ATENÇÃO: Só envie mensagem no WhatsApp se você <u>JÁ PAGOU</u> ou deseja pagar por outro método.<br>
-      ❌ Evite perguntas desnecessárias. Esta página já explica tudo. Evite ser bloqueado.
-    </div>
-
-    <h1>💄 Curso de Automaquiagem por Apenas 250MT</h1>
-    <p class="subtitle">Aprenda a se maquiar como profissional com técnicas simples e práticas. Curso 100% online e acessível!</p>
-
-    <ul class="features">
-      <li>✅ Acesso imediato ao curso por PDF e vídeo</li>
-      <li>✅ Técnicas de preparação da pele</li>
-      <li>✅ Segredos da maquiagem profissional</li>
-      <li>✅ Look completo para o dia e noite</li>
-      <li>✅ Certificado digital de participação</li>
-    </ul>
-
-    <div class="card">
-      <h2>🎁 BÔNUS EXCLUSIVOS:</h2>
-      <ul>
-        <li>💄 Guia de Produtos Baratos para Maquiagem</li>
-        <li>✅ Lista de Verificação de Maquiagem Completa</li>
-        <li>📱 Acesso ao Grupo VIP no WhatsApp</li>
-  <!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pagamento M-Pesa - Curso Automaquiagem</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #fff, #ffe6ec);
-      color: #333;
-      padding: 2rem;
-      text-align: center;
-    }
-    .container {
+      padding: 20px;
       max-width: 480px;
       margin: auto;
-      background: #fff;
-      border-radius: 12px;
-      padding: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
     h1 {
-      color: #e91e63;
-      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: var(--rosa);
+      margin-bottom: 10px;
+      line-height: 1.3;
     }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: var(--texto);
+    }
+
     p {
-      font-size: 1.1rem;
-      margin: 0.5rem 0;
-    }
-    .mpesa-box {
-      background: #f0fff4;
-      border-left: 5px solid #4caf50;
-      padding: 1rem;
-      margin-top: 1rem;
-      text-align: left;
       font-size: 1rem;
+      margin-bottom: 15px;
     }
-    .cta-button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      background-color: #4caf50;
-      color: #fff;
-      padding: 1rem 1.5rem;
-      font-size: 1.1rem;
-      border-radius: 10px;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
     }
-    .warning {
-      margin-top: 2rem;
-      background: #fff3cd;
-      border-left: 5px solid #ff9800;
-      padding: 1rem;
-      font-weight: bold;
-      color: #856404;
-      text-align: left;
+
+    li {
+      margin-bottom: 12px;
     }
-    .price-box {
-      margin: 1rem 0;
-      font-size: 1.5rem;
+
+    .highlight {
+      background-color: #ffeaf5;
+      border-left: 4px solid var(--rosa);
+      padding: 15px;
+      border-radius: 6px;
     }
-    .price-original {
-      text-decoration: line-through;
-      color: #888;
-      margin-right: 1rem;
+
+    .section {
+      margin-bottom: 35px;
     }
-    .price-now {
-      color: #4caf50;
-      font-weight: bold;
+
+    .testimonial {
+      background-color: #fdf2f7;
+      border: 1px solid #ffcce5;
+      border-radius: 6px;
+      padding: 15px;
+      margin-bottom: 15px;
     }
-    #countdown {
-      font-size: 1.25rem;
-      margin-top: 0.5rem;
-      color: #e91e63;
+
+    .testimonial strong {
+      color: var(--rosa);
     }
-    button.copy-btn {
-      background-color: #2196f3;
-      color: white;
-      padding: 0.75rem 1rem;
-      border: none;
-      border-radius: 8px;
-      margin-top: 1rem;
-      font-size: 1rem;
-      cursor: pointer;
+
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>💰 Finalize seu Pagamento via M-Pesa</h1>
-    <p>Aproveite esta promoção especial por tempo limitado!</p>
 
-    <div class="price-box">
-      <span class="price-original">600MT</span>
-      <span id="promo-price" class="price-now">250MT</span>
+    <!-- 1. HEADLINE -->
+    <div class="section">
+      <h1>Aprenda a se Maquiar como uma Profissional por apenas <strong>250MT</strong>!</h1>
     </div>
 
-    <p>Promoção termina em: <span id="countdown">05:00</span></p>
-
-    <div class="mpesa-box">
-      <p><strong>Número da Empresa (M-Pesa):</strong> <span id="mpesa-number">842482984</span></p>
-      <button class="copy-btn" onclick="copyMpesaNumber()">📋 Copiar Número para Pagar</button>
-      <p style="margin-top:1rem"><strong>1.</strong> Copie o número acima<br>
-         <strong>2.</strong> Abra o app M-Pesa no seu celular<br>
-         <strong>3.</strong> Faça o pagamento e envie o comprovativo no WhatsApp</p>
+    <!-- 2. SUBHEADLINE -->
+    <div class="section">
+      <h2>Mesmo que você nunca tenha feito um curso na vida. Tudo do zero, direto no seu WhatsApp.</h2>
     </div>
 
-    <a href="https://wa.me/258842482984" class="cta-button">📲 ENVIAR COMPROVATIVO PELO WHATSAPP</a>
-
-    <div class="warning">
-      ⚠️ <strong>IMPORTANTE:</strong> Após o pagamento, envie imediatamente o comprovativo para o WhatsApp. <br>
-      ❌ Não envie mensagens com dúvidas, curiosidade ou conversa. Apenas envie o comprovativo de pagamento ou pergunte sobre outro método de pagamento.
+    <!-- 4. LISTA DE BENEFÍCIOS -->
+    <div class="section highlight">
+      <h2>O que você vai receber:</h2>
+      <ul>
+        <li>✅ Curso completo de automaquiagem (vídeos explicativos)</li>
+        <li>✅ Acesso pelo WhatsApp logo após o pagamento</li>
+        <li>✅ Técnicas simples com materiais que você já tem em casa</li>
+        <li>✅ Certificado digital incluso</li>
+        <li>✅ Acesso vitalício (assista quando quiser)</li>
+        <li>✅ Bônus: Guia de cuidados com a pele</li>
+      </ul>
     </div>
+
+    <!-- 5. QUEBRA DE OBJEÇÕES -->
+    <div class="section">
+      <h2>Tem dúvidas? Resolvemos aqui:</h2>
+      <ul>
+        <li><strong>“Não tenho experiência nenhuma...”</strong><br>
+          Ótimo! O curso é para iniciantes. Você vai aprender do zero, com calma e clareza.</li><br>
+        <li><strong>“Não tenho maquiagem cara.”</strong><br>
+          Perfeito. Vamos te mostrar como fazer uma maquiagem linda com produtos acessíveis.</li><br>
+        <li><strong>“Tenho pouco tempo...”</strong><br>
+          O curso é gravado! Assista no seu ritmo, sem pressão ou horários.</li><br>
+        <li><strong>“E se eu pagar e não receber?”</strong><br>
+          Você recebe o acesso direto no WhatsApp ou por e-mail. Suporte 100% disponível.</li><br>
+        <li><strong>“Por que tão barato?”</strong><br>
+          Porque queremos dar acesso a TODAS. Esse valor simbólico é só para cobrir custos. Aproveite enquanto está ativo.</li>
+      </ul>
+    </div>
+
+    <!-- 6. PROVA SOCIAL -->
+    <div class="section">
+      <h2>Veja o que outras alunas estão dizendo:</h2>
+
+      <div class="testimonial">
+        <p><strong>Maria J. (Maputo)</strong><br>
+        “Nunca imaginei que eu ia conseguir me maquiar sozinha! As aulas são fáceis e agora eu me sinto linda todos os dias. Valeu cada metical!”</p>
+      </div>
+
+      <div class="testimonial">
+        <p><strong>Cláudia M. (Beira)</strong><br>
+        “Já tinha tentado vídeos no YouTube, mas só com esse curso eu entendi como fazer de verdade. Recomendo demais!”</p>
+      </div>
+
+      <div class="testimonial">
+        <p><strong>Celma R. (Nampula)</strong><br>
+        “Achei que por esse preço seria fraco, mas me surpreendi! Curso completo, certinho, e com certificado. Amei!”</p>
+      </div>
+    </div>
+
   </div>
-
-  <script>
-    function copyMpesaNumber() {
-      const mpesaNumber = document.getElementById("mpesa-number").textContent;
-      navigator.clipboard.writeText(mpesaNumber);
-      alert("Número copiado: " + mpesaNumber);
-    }
-
-    // Countdown timer (5 minutes)
-    let timeLeft = 300;
-    const countdownElement = document.getElementById("countdown");
-    const promoPrice = document.getElementById("promo-price");
-
-    const timer = setInterval(() => {
-      const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
-      const seconds = String(timeLeft % 60).padStart(2, '0');
-      countdownElement.textContent = `${minutes}:${seconds}`;
-      timeLeft--;
-
-      if (timeLeft < 0) {
-        clearInterval(timer);
-        promoPrice.textContent = "700MT";
-        document.querySelector('.price-original').textContent = "";
-        countdownElement.textContent = "Promoção encerrada";
-      }
-    }, 1000);
-  </script>
 </body>
 </html>
+<section id="oferta-limitada" style="padding: 2rem; background: #fff3e0; border-radius: 1rem; margin: 2rem 1rem;">
+  <h2 style="color: #ff5722; font-size: 1.7rem; margin-bottom: 0.5rem;">⏳ Oferta por Tempo Limitado</h2>
+  <p style="font-size: 1.1rem;">Você tem <strong id="timer" style="color: #d32f2f;">10:00</strong> minutos para garantir o preço promocional de <span id="preco-atual" style="color: #388e3c; font-weight: bold;">250MT</span></p>
 
-
-    <div id="notification" class="notification-box"></div>
-
-    <div class="faq">
-      <h2>❓ Perguntas Frequentes</h2>
-      <p class="question">1. O curso é presencial?</p>
-      <p>Não. É 100% online. Você recebe tudo no seu celular após o pagamento.</p>
-      <p class="question">2. Preciso de produtos caros?</p>
-      <p>Não! Você vai aprender com o que tem em casa. E ainda recebe um guia de produtos acessíveis.</p>
-      <p class="question">3. Como recebo o acesso?</p>
-      <p>Enviando o comprovativo no WhatsApp. Você será atendida rapidamente.</p>
-      <p class="question">4. Vale mesmo a pena?</p>
-      <p>Se você quer aprender, economizar e ficar linda sozinha — sim, vale MUITO a pena.</p>
-    </div>
+  <div id="area-pagamento" style="margin-top: 1.5rem;">
+    <p style="margin-bottom: 0.3rem;"><strong>Faça o pagamento M-Pesa para:</strong></p>
+    <p style="font-size: 1.2rem; font-weight: bold;">📱 842482984 – Kaito Luís</p>
+    <button onclick="copyPaymentNumber()" style="background: #2196f3; color: white; padding: 0.8rem 1rem; border: none; border-radius: 8px; font-size: 1rem; margin-top: 0.5rem;">
+      📋 Copiar Número
+    </button><br>
+    <a id="btn-comprovativo" href="https://wa.me/258842482984" style="display: inline-block; margin-top: 1rem; background: #25d366; color: white; padding: 0.8rem 1.2rem; font-size: 1rem; border-radius: 10px; text-decoration: none;">
+      📲 ENVIAR COMPROVATIVO
+    </a>
   </div>
 
-  <script>
-    const notifications = [
-      "✅ Antónia de Tete acabou de garantir o curso!",
-      "🎉 Carlos (Maputo) entrou no grupo VIP!",
-      "💄 Lúcia (Beira) comprou e amou o conteúdo!",
-      "📲 Mário (Nampula) pagou via M-Pesa!",
-      "🔥 Inês (Quelimane) já está maquiando clientes!"
-    ];
+  <p id="oferta-expirada" style="display: none; color: #d50000; font-weight: bold; margin-top: 1.5rem;">⛔ Tempo esgotado. O preço voltou para <strong>700MT</strong>.</p>
+</section>
 
-    const notificationBox = document.getElementById('notification');
+<script>
+  let timer = 600;
+  const timerEl = document.getElementById("timer");
+  const precoEl = document.getElementById("preco-atual");
+  const pagamentoEl = document.getElementById("area-pagamento");
+  const btnComprovativo = document.getElementById("btn-comprovativo");
+  const ofertaExpirada = document.getElementById("oferta-expirada");
 
-    function showNotification() {
-      const index = Math.floor(Math.random() * notifications.length);
-      notificationBox.textContent = notifications[index];
-      notificationBox.style.display = 'block';
+  const countdown = setInterval(() => {
+    let min = Math.floor(timer / 60);
+    let sec = timer % 60;
+    if (sec < 10) sec = "0" + sec;
+    timerEl.innerHTML = `${min}:${sec}`;
+    timer--;
 
-      setTimeout(() => {
-        notificationBox.style.display = 'none';
-      }, 5000);
+    if (timer < 0) {
+      clearInterval(countdown);
+      precoEl.innerHTML = "700MT";
+      pagamentoEl.style.display = "none";
+      ofertaExpirada.style.display = "block";
     }
+  }, 1000);
 
-    setInterval(showNotification, 15000);
-  </script>
-</body>
-</html>
+  function copyPaymentNumber() {
+    navigator.clipboard.writeText("842482984");
+    alert("✅ Número copiado: 842482984");
+  }
+</script>
+<section style="padding: 2rem; background: #e8f5e9; border-radius: 1rem; margin: 2rem 1rem;">
+  <h2 style="color: #388e3c; font-size: 1.6rem; margin-bottom: 1rem;">✅ Garantia 100% Entrega Imediata</h2>
+  <p style="font-size: 1.1rem; line-height: 1.6;">
+    Nós respeitamos cada centavo que você investe. Por isso, garantimos que <strong>assim que você enviar o comprovativo do pagamento, o curso será entregue diretamente no seu WhatsApp</strong>.
+  </p>
+  <p style="margin-top: 1rem;">
+    ⏱️ <strong>Tempo de resposta:</strong> no máximo 30 minutos. Nossa equipe está sempre ativa.
+  </p>
+  <p style="margin-top: 1rem;">
+    🤝 <strong>Confiança total:</strong> se você pagar e não receber o conteúdo, <u>nós devolvemos 100% do seu dinheiro</u> — sem burocracia.
+  </p>
+  <p style="margin-top: 1rem; font-weight: bold; color: #2e7d32;">
+    O risco é todo nosso. A decisão de mudar sua vida por apenas 250MT é sua. 💪
+  </p>
+</section>
+<section style="padding: 2rem; background: #f9fbe7; border-radius: 1rem; margin: 2rem 1rem;">
+  <h2 style="color: #827717; font-size: 1.6rem; margin-bottom: 1rem;">📢 O Que Estão Dizendo...</h2>
+
+  <div style="background: white; padding: 1rem; border-radius: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 1rem; font-style: italic;">“Confesso que achei que era mais uma daquelas promessas falsas... mas depois que paguei e recebi o curso no meu WhatsApp, fiquei sem palavras. Aprendi truques incríveis que nunca tinha visto!”</p>
+    <p style="font-weight: bold; margin-top: 0.5rem;">– Sónia M., Maputo</p>
+  </div>
+
+  <div style="background: white; padding: 1rem; border-radius: 1rem; margin-bottom: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 1rem; font-style: italic;">“Curso muito bom! Já estou a praticar com minhas amigas e elas ficaram impressionadas. O conteúdo é claro, direto e dá mesmo resultado!”</p>
+    <p style="font-weight: bold; margin-top: 0.5rem;">– Carla J., Beira</p>
+  </div>
+
+  <div style="background: white; padding: 1rem; border-radius: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    <p style="font-size: 1rem; font-style: italic;">“Paguei e em menos de 10 minutos o curso chegou no meu WhatsApp! Nunca fui tratada com tanto profissionalismo assim. Valeu cada metical!”</p>
+    <p style="font-weight: bold; margin-top: 0.5rem;">– Elsa T., Matola</p>
+  </div>
+</section>
+<section style="padding: 2rem; background: #fffde7; border-radius: 1rem; margin: 2rem 1rem;">
+  <h2 style="color: #f57f17; font-size: 1.6rem; margin-bottom: 1rem;">🤔 Perguntas Frequentes (Leia antes de chamar no WhatsApp)</h2>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>📦 Como recebo o curso?</strong></summary>
+    <p>Você recebe o curso diretamente no seu WhatsApp, logo após enviar o comprovante do pagamento. Simples e rápido.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>⏰ Em quanto tempo eu recebo?</strong></summary>
+    <p>Geralmente, em até 10 minutos após o envio do comprovativo. Pode ser até antes, dependendo do horário.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>💵 Como faço o pagamento?</strong></summary>
+    <p>Você envia 250MT para o número <strong>842482984</strong> (M-Pesa / E-Mola). Depois envia o comprovante no WhatsApp.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>📞 Qual é o número para pagar?</strong></summary>
+    <p>Use este número: <strong>842482984</strong>. Você pode clicar abaixo para copiar automaticamente:</p>
+    <button onclick="copyToClipboard('842482984')" style="background: #fdd835; border: none; padding: 0.8rem 1rem; border-radius: 1rem; font-weight: bold; font-size: 1rem; cursor: pointer;">📋 Copiar Número</button>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>📲 Posso pagar por outro método?</strong></summary>
+    <p>Atualmente aceitamos apenas pagamentos via <strong>M-Pesa e E-Mola</strong>.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>🧾 Preciso mandar o comprovativo?</strong></summary>
+    <p>Sim, é obrigatório. Sem o comprovativo não conseguimos identificar o seu pagamento e liberar o curso.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>💻 O curso é online?</strong></summary>
+    <p>Sim! O curso é 100% online. Você recebe o conteúdo no WhatsApp e pode assistir no seu celular quando e onde quiser.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>📅 Por quanto tempo terei acesso?</strong></summary>
+    <p>Você poderá acessar o conteúdo sempre que quiser. Ele é seu para sempre.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>👩‍🎓 Preciso de internet para assistir?</strong></summary>
+    <p>Sim, é necessário ter acesso à internet para assistir o curso. Mas após baixar os vídeos, pode ver offline.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>👥 É um curso para iniciantes?</strong></summary>
+    <p>Sim! O curso foi feito pensando em iniciantes que querem aprender do zero e começar a maquilhar de forma profissional.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>💼 Esse curso serve para trabalhar na área?</strong></summary>
+    <p>Sim! Você vai aprender técnicas para maquilhar outras pessoas e começar a atender clientes de forma profissional.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>🎓 Tem certificado?</strong></summary>
+    <p>Sim! Ao final do curso, você pode solicitar o seu certificado de conclusão diretamente no WhatsApp.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>📱 Tenho que baixar algum aplicativo?</strong></summary>
+    <p>Não precisa baixar nada. O conteúdo é enviado por link direto ou vídeo dentro do próprio WhatsApp.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>🧠 O que eu vou aprender no curso?</strong></summary>
+    <p>Você vai aprender desde o básico até técnicas profissionais: preparação da pele, aplicação correta de base, sombras, contorno, sobrancelhas, cílios, maquiagem para diferentes ocasiões e muito mais.</p>
+  </details>
+
+  <details style="margin-bottom: 1rem;">
+    <summary><strong>📌 E se eu tiver dúvidas durante o curso?</strong></summary>
+    <p>Você pode mandar mensagem no WhatsApp para tirar dúvidas diretamente com a equipe.</p>
+  </details>
+</section>
+
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+      alert("Número copiado: " + text);
+    }, function(err) {
+      alert("Erro ao copiar número.");
+    });
+  }
+</script>
+<section style="background: #fff3e0; padding: 2rem 1rem; border-radius: 1.5rem; margin: 2rem 1rem;">
+  <h2 style="font-size: 1.8rem; color: #e65100; margin-bottom: 1rem; text-align: center;">
+    ⚠️ Atenção: Essa é sua última chance!
+  </h2>
+  <p style="font-size: 1.1rem; text-align: center; margin-bottom: 1.2rem;">
+    Essa oferta especial de <strong>250MT</strong> é por tempo limitado. Assim que o contador zerar, o valor volta para <strong>700MT</strong>.
+  </p>
+  <p style="font-size: 1.1rem; text-align: center; font-weight: bold; color: #d84315; margin-bottom: 1rem;">
+    Garanta agora seu acesso com <u>mais de 60% de desconto</u> e comece hoje a se maquilhar como uma profissional!
+  </p>
+
+  <div style="text-align: center; margin-bottom: 1.5rem;">
+    <p style="margin-bottom: 0.5rem;"><strong>💰 Envia o valor para:</strong></p>
+    <div style="font-size: 1.3rem; font-weight: bold; color: #1b5e20; margin-bottom: 0.5rem;">842482984</div>
+    <button onclick="copyToClipboard('842482984')" style="background: #ffca28; border: none; padding: 0.8rem 1.5rem; border-radius: 1.2rem; font-weight: bold; font-size: 1rem; cursor: pointer;">📋 Copiar Número</button>
+  </div>
+
+  <div style="text-align: center; margin-bottom: 1.5rem;">
+    <p>Depois de pagar, envie o comprovativo no WhatsApp:</p>
+    <a href="https://wa.me/258842482984" style="background: #25D366; color: white; padding: 1rem 2rem; border-radius: 2rem; font-weight: bold; font-size: 1.2rem; display: inline-block; text-decoration: none;">📲 Enviar Comprovante</a>
+  </div>
+
+  <p style="text-align: center; font-size: 0.9rem; color: #616161;">
+    Oferta válida por tempo limitado. Não garantimos esse valor nos próximos minutos.
+  </p>
+</section>
+
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+      alert("Número copiado: " + text);
+    }, function(err) {
+      alert("Erro ao copiar número.");
+    });
+  }
+</script>
